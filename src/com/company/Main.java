@@ -12,7 +12,7 @@ public class Main {
         Scanner sc;
         HyperbolicSineFunction sineFunction =new HyperbolicSineFunction();
         System.out.println("---------- Sinh(x) Calculator -----------");
-        System.out.print("Enter the value of x: ");
+        System.out.print("Enter the value of x (numbers only): ");
         sc=new Scanner(System.in);
         if (sc.hasNextDouble()) {
             double input = sc.nextDouble();

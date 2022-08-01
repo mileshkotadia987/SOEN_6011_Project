@@ -23,7 +23,7 @@ public class HyperbolicSineFunctionTest {
         double num=1.0;
 //        HyperbolicSineFunction sineFunction=new HyperbolicSineFunction();
         double actualOutput=sineFunction.exponentialPower(num);
-        double expectedOutput=2.7182815255731922;
+        double expectedOutput=2.7182818284590455;
         Assert.assertEquals(actualOutput,expectedOutput,0.0);
     }
 
@@ -42,7 +42,7 @@ public class HyperbolicSineFunctionTest {
         double e1= sineFunction.exponentialPower(input);
         double e2= sineFunction.exponentialPower(-input);
         double actualOutput=sineFunction.FunctionEvaluation(input,e1,e2);
-        double expectedOutput=1.1752011684;
+        double expectedOutput=1.1752011936;
         expectedOutput = Double.parseDouble(decimalFormat.format(expectedOutput));
         Assert.assertEquals(actualOutput,expectedOutput,0.0);
     }

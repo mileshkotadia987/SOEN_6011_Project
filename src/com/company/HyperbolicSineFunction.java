@@ -8,20 +8,30 @@ import java.text.DecimalFormat;
  */
 
     public class HyperbolicSineFunction {
-        int decimalCount = 10;
         private static final double denominator = 2d;
         DecimalFormat decimalFormat = new DecimalFormat(".##########");
     /**
      * This method evaluates the e power num
-     * @param num user input
+//     * @param num user input
      * @return the computation of exponential power of num
      */
     public double exponentialPower(double num) {
-        double exponentComputation = 0;
-        for (int fact = decimalCount; fact > 0; --fact) {
-            exponentComputation = 1 + num * exponentComputation / fact;
-        }
-        return exponentComputation;
+
+
+        double exponent, result, fractional, counter, partial;
+        exponent = num;
+        fractional = exponent;
+        result = (1.0 + exponent);
+        counter = 1.0;
+        do
+        {
+            counter++;
+            fractional *= (exponent / counter);
+            partial = result;
+            result += fractional;
+        }while(partial != result);
+
+        return result;
     }
 
     /**
