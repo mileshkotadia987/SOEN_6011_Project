@@ -86,7 +86,7 @@ Hyperbolic functions are analogous to circular functions and trigonometric funct
 \subsection{Context of Use Model}
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=13cm]{40046876-F3-D2-Latex/context.jpg}
+    \includegraphics[width=13cm]{context.jpg}
     \caption{Context Diagram for Hyperbolic Sine Function}
     \label{sinh(x) graph}
 \end{figure}
@@ -163,6 +163,7 @@ Hyperbolic functions are analogous to circular functions and trigonometric funct
 \textbf{Description:}
 For a given value of x, Algorithm 1 determines the hyperbolic sine function's value. There is no explicit calculation of the value of e in this algorithm. The below mentioned function EXPONENTIALPOWER() uses the Taylor series to determine the value of e power x \cite{sinhintro}.\newline 
 We cannot calculate Taylor series that proceed indefinitely since the algorithm must end at some point. Due to this,  the counter value is 10, which also meet above mentioned Assumption 3 and allows the algorithm to end with the highest precision possible up to 10 decimal places.\newline After computing the value of $e\textsuperscript{x}$ and $e\textsuperscript{-x}$ , value for the hyperbolic sine function is calculated.\\
+\newpage
 \newline\textbf{Advantage:}
 \begin{itemize}
     \item There is no recursion used in the algorithm which means that the execution stack will need less space.
@@ -176,6 +177,14 @@ We cannot calculate Taylor series that proceed indefinitely since the algorithm 
 \begin{itemize}
     \item No Recursion and Taylor Series Efficiency.
 \end{itemize}
+\textbf{Mind Map:}
+     \begin{figure}[htp]
+    \centering
+    \includegraphics[width=10cm]{m1.jpg}
+    \caption{ Mind Map of Algorithm 1}
+    \label{Project Modules}
+\end{figure}
+\newpage
 \textbf{Pseudocode Algorithm 1:}
 \begin{algorithm}
 \caption{Calculate sinh($x$) =   {($e\textsuperscript{x} - e\textsuperscript{-x}$)}{$\div$ 2}}
@@ -202,9 +211,7 @@ We cannot calculate Taylor series that proceed indefinitely since the algorithm 
 \EndFunction
 \end{algorithmic}
 \end{algorithm}\\
-\newline \newpage
-\newline {\\}
-\justifying
+
 
 \subsection{Algorithm 2} \newline\newline
 \textbf{Description:}
@@ -226,6 +233,13 @@ Algorithm uses a Recursion functionality to calculate $e\textsuperscript{x}$ and
 \begin{itemize}
     \item adaptability in obtaining a greater approximation of $e$. This aids in getting precise results for sinh ($x$).
 \end{itemize}
+\textbf{Mind Map:}
+     \begin{figure}[htp]
+    \centering
+    \includegraphics[width=9cm]{m2.jpg}
+    \caption{ Mind Map of Algorithm 2}
+    \label{Project Modules}
+\end{figure}
 \newpage
 \noindent\textbf{Pseudocode Algorithm 2:}
 \begin{algorithm}
@@ -287,7 +301,7 @@ I used the Intellij IDE and Intellij Debugger to implement the sinh($x$) functio
 \end{itemize}
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=12cm]{40046876-F3-D2-Latex/inlineDebug.jpg}
+    \includegraphics[width=12cm]{inlineDebug.jpg}
     \caption{Support for conditional break points}
     \label{Support for conditional break points}
 \end{figure}
@@ -311,7 +325,7 @@ company \cite{casio}. \
     \end{itemize}
     \begin{figure}[htp]
     \centering
-    \includegraphics[width=12cm]{40046876-F3-D2-Latex/codecoverage.jpg}
+    \includegraphics[width=12cm]{codecoverage.jpg}
     \caption{Code coverage for the Project}
     \label{Code coverage for the Project}
 \end{figure}
@@ -322,7 +336,7 @@ company \cite{casio}. \
     \item JIt takes 74 ms (0.074 seconds) to complete a unit test suit (5 test cases) that runs all implemented functions.
      \begin{figure}[htp]
     \centering
-    \includegraphics[width=12cm]{40046876-F3-D2-Latex/testcases.jpg}
+    \includegraphics[width=12cm]{testcases.jpg}
     \caption{ Junit test suit Execution time for all functions}
     \label{Execution time for all functions}
 \end{figure}
@@ -335,7 +349,7 @@ For sine function computation and function validation, there is a separate class
 \end{itemize}
  \begin{figure}[htp]
     \centering
-    \includegraphics[width=12cm]{40046876-F3-D2-Latex/module.jpg}
+    \includegraphics[width=12cm]{module.jpg}
     \caption{ Project Modules}
     \label{Project Modules}
 \end{figure}
@@ -356,7 +370,7 @@ Robustness is achieved by ,
 \end{itemize}
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=12cm]{40046876-F3-D2-Latex/ui.jpg}
+    \includegraphics[width=12cm]{ui.jpg}
         \caption{Screenshot of  UI}
     \label{Screenshot of  UI}
 \end{figure}
