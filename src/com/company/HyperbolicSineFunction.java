@@ -12,7 +12,7 @@ import java.text.DecimalFormat;
         DecimalFormat decimalFormat = new DecimalFormat(".##########");
     /**
      * This method evaluates the e power num
-//     * @param num user input
+     * @param num user input
      * @return the computation of exponential power of num
      */
     public double exponentialPower(double num) {
