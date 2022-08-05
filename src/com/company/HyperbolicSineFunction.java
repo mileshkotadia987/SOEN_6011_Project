@@ -17,7 +17,6 @@ import java.text.DecimalFormat;
      */
     public double exponentialPower(double num) {
 
-
         double exponent, result, fractional, counter, partial;
         exponent = num;
         fractional = exponent;
